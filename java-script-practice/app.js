@@ -78,22 +78,38 @@
 //  console.log("==================================")
 
 
-var date= new Date();
-var now= new Date();
+// var date= new Date();
+// var now= new Date();
 
-date.setDate(30);
-date.setMonth(10);
-date.setFullYear(2025);
-date.setHours(12);
-date.setMinutes(40);
-date.setSeconds(3);
+// date.setDate(30);
+// date.setMonth(10);
+// date.setFullYear(2025);
+// date.setHours(12);
+// date.setMinutes(40);
+// date.setSeconds(3);
 
-console.log("current Date and Time: " +date.toString());
-console.log(date.getTime())
-console.log(now.getTime());
+// console.log("current Date and Time: " +date.toString());
+// console.log(date.getTime())
+// console.log(now.getTime());
 
-var diff=now.getTime() - date.getTime();
-console.log("Difference in milliseconds" + diff);
+// var diff=now.getTime() - date.getTime();
+// console.log("Difference in milliseconds" + diff);
+
+
+var fruits= ["mango", "avacado", "apple", "pieapple", "orange", "grapes", "berry", "banana"];
+var findfruit= prompt("Enter your fruit name").toLowerCase()  ;  
+ var isFound = false;
+
+for(var i = 0; i < fruits.length; i++ ){
+    if(findfruit === fruits[i]){
+        alert(fruits[i] + "found on position:" +(i + 1));
+       isFound = true;
+       break;
+}
+}
+if (isFound === false){
+    alert("Fruit not found !");
+}
 
 
 
